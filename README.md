@@ -1,6 +1,6 @@
 # Capacitor Converter
 
-Convert capacitance measurements between units of pF, nF, μF, and F.
+Google Chrome extension for converting capacitance measurements between units of pF, nF, μF, and F.
 
 ## Installation
 
