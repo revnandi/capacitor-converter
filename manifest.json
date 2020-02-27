@@ -1,0 +1,17 @@
+{
+  "name": "Capacitor Converter",
+  "version": "1.0",
+  "description": "Convert capacitance measurements between units of pF, nF, μF, and F.",
+  "icons": {
+    "128": "icon_16.png",
+    "128": "icon_32.png",
+    "128": "icon_48.png",
+    "128": "icon_128.png"
+  },
+  "manifest_version": 2,
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_icon": "icon_16.png",
+    "default_popup": "popup.html"
+  }
+}
