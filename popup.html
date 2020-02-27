@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacitor Converter</title>
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap" rel="stylesheet">
+  <style>
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance:textfield;
+    }
+    
+    html, body {
+      font-family:'DM Sans', sans-serif;
+      font-size: 14px;
+      margin: 0;
+      min-height: 180px;
+      padding: 8px 12px 16px 12px;
+      min-width: 285px;
+    }
+    header {
+      padding: 0 16px;
+    }
+    h1 {
+      display: inline-block;
+      font-size: 25px;
+      line-height: 1.5;
+      margin: 0;
+      color: #126be4;
+      border-bottom: 2px solid rgba(0,0,0,0.25);
+    }
+    main {
+      padding: 0 16px;
+    }
+    .inputs__label {
+      font-weight: bold;
+      color: #126be4;
+    }
+    .inputs__input {
+      -webkit-appearance: none;
+      width: 100%;
+      padding: 8px 12px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid rgba(0,0,0,0.25);
+      border-radius: 3px;
+    }
+    .inputs__input:focus {
+      margin: 7px 0;
+      border: 2px solid #126be4;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Capacitor Converter</h1>
+  </header>
+  <main id="cc_converter">
+    <p>Just start typing...</p>
+    <div class="inputs">
+      <div class="inputs__item">
+        <label class="inputs__label" for="pfinput">pF</label>
+        <input class="inputs__input" type="number" id="cc_input_pf" value="0" name="pfinput" data-unit="pf" data-modifier="1000000000000">
+      </div>
+      <div class="inputs__item">
+        <label class="inputs__label" for="nfinput">nf</label>
+        <input class="inputs__input" type="number" id="cc_input_nf" value="0" name="nfinput" data-unit="nf" data-modifier="1000000000">
+      </div>
+      <div class="inputs__item">
+        <label class="inputs__label" for="ufinput">μF</label>
+        <input class="inputs__input" type="number" id="cc_input_uf" value="0" name="ufinput" data-unit="uf" data-modifier="1000000">
+      </div>
+      <div class="inputs__item">
+        <label class="inputs__label" for="finput">F</label>
+        <input class="inputs__input" type="number" id="cc_input_f" value="0" name="finput" data-unit="f" data-modifier="1">
+      </div>
+    </div>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
